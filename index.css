@@ -43,7 +43,7 @@ nav ul li a{
 
 
 .hero-container{
-    background-image: url("images/bg-curvy-mobile.svg");
+    background-image: url("bg-curvy-mobile.svg");
     background-repeat: no-repeat;
     background-position-y:bottom;
     background-color: hsl(217, 28%, 15%);
@@ -312,7 +312,7 @@ nav ul li a{
 }
 
 .fylo-location{
-    background: url('images/icon-location.svg') no-repeat left top;
+    background: url('icon-location.svg') no-repeat left top;
     background-position-x: 25px;
     background-position-y: 5px ;
     height: 34px;
@@ -323,7 +323,7 @@ nav ul li a{
 }
 
 .fylo-phone{
-    background: url('images/icon-phone.svg') no-repeat left top;
+    background: url('icon-phone.svg') no-repeat left top;
     background-position-x: 25px;
     background-position-y: 82px ;
     height: 34px;
@@ -334,7 +334,7 @@ nav ul li a{
 }
 
 .fylo-email{
-    background: url('images/icon-email.svg') no-repeat left top;
+    background: url('icon-email.svg') no-repeat left top;
     background-position-x: 25px;
     background-position-y: 22px ;
     height: 34px;
