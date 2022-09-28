@@ -23,60 +23,69 @@ header{
 }
 
 .header-logo{
-    max-width: 70px;
+    max-width: 30%;
 }
 
+nav{
+    width: 50%;
+    padding:0;
+
+}
 .nav-links{
     list-style: none;
+    padding:0;
+    float: right;
 }
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 10px;
+    margin:  0 5px;
 }
 
 nav ul li a{
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+    font-family:'Raleway', sans-serif;
 }
 
 
 
 .hero-container{
-    background-image: url("bg-curvy-mobile.svg");
+    background-image: url("images/bg-curvy-mobile.svg");
     background-repeat: no-repeat;
-    background-position-y:bottom;
+    background-position: bottom;
+    background-size: 100%;
     background-color: hsl(217, 28%, 15%);
     margin: 0px auto;
     width: 100%;
-    padding: 30px;
+    padding: 10%;
 }
 
 .intro-img{
     display:block;
     width: 100%;
-    margin: 0px auto 70px;
+    margin: 0 auto 25%;
 }
 
 .intro-text-container{
-    width: 100%;
+    width: 80%;
+    margin: -50px auto 0;
     text-align: center;
-    margin-top: -60px;
 }
 
 .intro-text{
     font-family:'Raleway', sans-serif; 
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color:hsl(0, 0%, 100%);
 }
 
 .intro-subtext{
     margin: 15px auto;
-    padding: 10px;
+    padding: 2px;
     font-family:'Raleway', sans-serif; 
-    font-size: 1.06rem;
-    line-height: 1.4; 
+    font-size: 0.9rem;
+    line-height: 1.5; 
     color:hsl(0, 0%, 100%);
 }
 
@@ -89,7 +98,7 @@ nav ul li a{
         color: #ffffff;
         background: #3498db;
         display: block;
-        width: 65%;
+        width: 50%;
         margin: 16px auto;
         padding: 15px 25px 15px 25px;
         text-decoration: none;
@@ -292,9 +301,9 @@ nav ul li a{
 }
 
 .footer-container{
-    margin-top: 30px;
+    margin: 30px 0 0;
     background-color:hsl(216, 53%, 9%);
-    padding:  190px 0 0;
+    padding:  190px 0 40px;
 }
 
 .footer-logo{
@@ -305,62 +314,49 @@ nav ul li a{
     display: block;
 }
 
-.fylo-info-list{
+.fylo-info-location{
     list-style-type: none;
-    margin: 0;
+    margin: 8px 20px ;
     padding: 0;
 }
 
 .fylo-location{
-    background: url('icon-location.svg') no-repeat left top;
-    background-position-x: 25px;
-    background-position-y: 5px ;
-    height: 34px;
-    padding: 0px 60px;
+    background: url('images/icon-location.svg') no-repeat left top;
+    background-position: 0 5px;
     color: hsl(0, 0%, 100%);
     font-size: 1rem;
+    padding-left: 30px;
     line-height: 1.5;
 }
 
+.fylo-info-others{
+    list-style-type: none;
+    margin: 8px 20px ;
+    padding: 4px 0;
+}
+
 .fylo-phone{
-    background: url('icon-phone.svg') no-repeat left top;
-    background-position-x: 25px;
-    background-position-y: 82px ;
-    height: 34px;
-    padding: 80px 60px 30px;
-    color: hsl(0, 0%, 100%);
+    background: url('images/icon-phone.svg') no-repeat left top;
+    background-position: 0 5px;
+    margin: 10px 0 0;
+    color: hwb(0 100% 0%);
     font-size: 1rem;
+    padding-left: 30px;
     line-height: 1.5;
 }
 
 .fylo-email{
-    background: url('icon-email.svg') no-repeat left top;
-    background-position-x: 25px;
-    background-position-y: 22px ;
-    height: 34px;
-    padding: 20px 60px 50px;
-    color: hsl(0, 0%, 100%);
+    background: url('images/icon-email.svg') no-repeat left top;
+    background-position: 0 5px;
+    margin: 10px 0 0;
+    color: hwb(0 100% 0%);
     font-size: 1rem;
+    padding-left: 30px;
     line-height: 1.5;
 }
 
-.fylo-info-2{
-    margin: 25px 0 0;
-}
-
-.fylo-info-2 ul{
-    list-style: none;
-}
-
-.fylo-info-2 ul li{
-    font-family:'Raleway', sans-serif;
-    font-weight: 400; 
-    margin: 20px 10px 0 -20px;
-    color: hsl(0, 0%, 100%);
-}
-
 .fylo-info-3{
-    margin: 40px 0 0;
+    margin: 25px 0 0;
 }
 
 .fylo-info-3 ul{
@@ -368,6 +364,21 @@ nav ul li a{
 }
 
 .fylo-info-3 ul li{
+    font-family:'Raleway', sans-serif;
+    font-weight: 400; 
+    margin: 20px 10px 0 -20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.fylo-info-4{
+    margin: 40px 0 0;
+}
+
+.fylo-info-4 ul{
+    list-style: none;
+}
+
+.fylo-info-4 ul li{
     font-family:'Raleway', sans-serif;
     font-weight: 400; 
     display: block;
@@ -379,16 +390,208 @@ nav ul li a{
     margin: 20px auto 0;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
 .social-icons{
+    display: inline-block;
     color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 100%);
-    padding: 15px 10px;
-    margin: 15px 10px;
-    border-radius: 50%;
+    border-radius:50%;
+    padding: 10px;
 }
 
+@media only screen and (min-width: 510px){
+    header{
+        padding: 20px 2%;
+    }
+
+    nav{
+        width: 60%;
+    }
+    
+    .nav-links li {
+        margin:  0 15px;
+    } 
+
+    nav ul li a{
+        font-size: 1.1rem;
+    }
+
+    .hero-container{
+        background-image: url("images/bg-curvy-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin: 0 auto 20px;
+        padding:10px;
+
+    }
+
+    .intro-img{
+        width: 60%;
+        margin-right: unset;
+        margin-left: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    .intro-text-container{
+        width:55%;
+        margin: 20px auto;
+    }
+
+    .products-desc{
+        margin: 20px auto 50px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .product-desc > *{
+        flex-basis: 100%;
+    }
+
+    .product-desc{
+        width: 30%;
+        margin: 40px;
+    }
+
+    .additional-product-desc{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 2%;
+
+    }
+
+    .additional-product-desc-img-comtainer{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .additional-product-desc-img{
+        margin:0;
+        width: 100%;
+    }
+
+    .additional-product-desc-texts{
+        width: 50%;
+        margin: 50px auto 0;
+    }
+
+    .additional-product-desc-text{
+        margin: 20px 0; 
+        font-size: 2rem;
+        padding: 0 200px 0 55px;
+        font-weight: 700;
+        color:hsl(0, 0%, 100%); 
+    }
+
+    .additional-product-desc-subtext{
+        padding: 20px 100px 0 55px;
+        font-size: 0.9rem;
+        line-height:1.6;
+    }
+
+    .fylo-desc {
+        margin: 10px 100px 0 55px;    
+    }
+
+    .testimonial-container{
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 2px;
+    }
+
+    .testimonials{
+        margin:15px;
+        padding: 20px;
+        flex-shrink:2;
+    }
+
+    .email-signup{
+        width: 60%;
+    }
+
+    .response-form{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    form{
+        margin: 10px 0;
+        width: 65%;
+    }
+    .email-signup-info{
+        width: 100%;
+        padding:22px;
+    }
+
+    .btn-2{
+            width: 30%;
+            font-size: 1rem;
+            padding:15px 22px;
+    }
+    
+    .footer-logo{
+        margin:  10px 60px;
+    }
+
+    .fylo-info-container{
+        margin:  0 40px;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .fylo-info-1{
+        width: 30%;
+    }
+
+    .fylo-info-2{
+        width: 25%;
+        flex-grow: 1;
+    }
+
+
+    .fylo-info-3{
+        width: 15%;
+        margin-top: 0;
+        flex-shrink: 2;
+    }
+
+    .fylo-info-3 ul{
+        margin-top:0;
+    }
+
+    .fylo-info-4{
+        width: 15%;
+        margin-top: 0;
+        flex-shrink: 2;
+    }
+
+    .socials{
+        width: 15%;
+        margin:0;
+        flex-shrink: 2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .social-icons{
+        margin: 0 5px;
+    }
+
+}
 
 
 
